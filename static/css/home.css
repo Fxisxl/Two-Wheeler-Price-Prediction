@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: sans-serif;
+}
+
+
+#nav-bar{
+    position: sticky;        /* fixed(relative to browser) + static(default value) = sticky */
+    top: 0;            /*  At very top */
+    z-index: 10;        /* element with higher index will be on top of element with lower index, only work with positioned element */
+
+}
+
+
+.navbar{
+    background-color: black;          /* bg color of navbar */
+    padding: 0 !important;               /*   no border */
+}
+
+
+.navbar-brand img{                  /*img present in navbar-brand class*/
+    height: 40px;                   /*Height of logo, it will also effect navbar size*/
+    padding-left: 15px;             /*Space from left side*/
+}
+
+
+#navbarNav{                         /*div in which ul is present*/
+    position: relative;             /*Position will be set as given*/
+    /* left: 58%;          */
+                 /* 58% Space from left side */
+}
+
+
+.navbar-nav li{                     /*list item present in class navbar-nav( unordered list )*/
+    /* background: #fff;             Color of list item block */
+    padding: 0 10px;                /*Padding from top 0 and right 10px ( padding top right bottom left )*/
+}
+
+
+.navbar-nav li a{                   /* Text present in list element */
+    color: #fff !important;                 /* Color of text */
+    font-weight: 600;               /* Thickness of Text 400-Normal, 600-SemiBold, 700-Bold */
+    position: relative;
+    left: 25%;
+}
+
+
+.navbar-toggler-icon{
+    background: rgb(122, 122, 122);                 /* Bg color of toggler icon */
+    color: #fff;                                    /* Color of toggler icon */
+    font-weight: 600;                                 /* Thickness of toggler icon */
+}
+
+
+.navbar-toggler{
+    outline: none !important;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------   Banner Section  ----------------------------------------------------- */
+
+
+
+
+
+#banner{
+    background: #000;                         /* BG of banner section */
+    color: #fff;                              /* Color of Text in banner section */
+    padding-top: 5%;                            /* Padding of Text 5% from navbar */
+}
+
+
+
+.promo-title{                                   /* Head Line */
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+
+
+#banner a{                                      /* Start Calculating button in banner */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.bottom-img{
+     width: 100%;                             /*   To aquire full screen of device */
+}
+
+
+
+
+
+
+
+
+/* -------------------------------------------Service section-------------------------------------*/
+
+
+#services{
+    padding: 150px 0;                            /* Padding from wave row top 80px */
+}
+
+.service-img{                                   /* Service images size */
+    width: 100px;
+    margin-top: 20px;
+}
+
+
+.services{
+    padding: 50px;                              /* Padding from all direction */
+}
+
+.services h4{                                   /* Column's Headlines */
+    padding: 10px;
+    margin-top: 25px;
+    text-transform: uppercase;                  /* Convert text to Uppercase */
+}
+
+
+.title::before{
+    content: '';
+    background: #000;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+
+
+.title::after{
+    content: '';
+    background: #000;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);
+}
+
+
+#services .btn-primary{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: #000;
+}
+
+
+
+
+
+
+/* ------------------------------ABOUT US SECTION---------------------------------------------------- */
+
+#about-us{                                    /* Padding from section */
+    background: #f8f9fa;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+
+.about-title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 8%;
+}
+
+
+#about-us ul li{
+    margin: 10px 0;
+}
+
+
+#about-us ul li{
+    margin-left: 20px;
+}
+
+
+#whtbk{
+    padding-left: 45px;
+}
+
+
+
+
+
+/* ---------------------SOCIAL MEDIA SECTION------------------------------------------ */
+
+
+
+
+#social-media{                                      /* Section */
+    background: #fff;
+    padding: 100px 0;
+}
+
+
+#social-media p{                                    /* Head Line */
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+.social-icons img{
+    padding-top: 10px;
+    padding-bottom: 50px;
+    width: 60px;
+    transition: 0.5s;
+}
+
+
+.social-icons a:hover img{
+    transform: translateY(-10px);
+}
+
+
+
+
+
+
+/* -------------------------------------footer section------------------------------------------------- */
+
+
+#footer{
+    background-color: #000;
+    color: #fff;
+}
+
+
+.footer-img{
+    width: 100%;
+}
+
+
+.footer-box{
+    padding: 20px;
+}
+
+
+.footer-box img{
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+
+
+.footer-box .fa{
+    margin-right: 8px;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    background-color: #000;
+}
+
+
+
+.footer-box .form-control{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+}
+
+
+.footer-box .btn-primary{
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: #000;
+    background-color: #fff;
+}
+
+
+
+.footer-box .btn-primary:hover{
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #000;
+}
+
+
+
+
+hr{
+    background-color: #fff;
+}
+
+
+.copyright{
+    margin-top: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------   Calculator   ----------------------------------------------------------*/
+
+
+
+
+
+#calcu{
+    padding: 150px 0;
+}
+
+
+.menu-detail h1{
+    text-align: center;
+    color: aqua;
+}
+
+
+
+.wrapper{
+    padding-top: 200px;
+    background: #000;
+}
